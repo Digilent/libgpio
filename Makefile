@@ -9,7 +9,6 @@ VERSION = $(MAJOR).$(MINOR)
  
 all: lib$(NAME).so
 lib$(NAME).so.$(VERSION): $(OUTS)
-	$(CC) $(LDFLAGS) $(OUTS) -shared -Wl,-soname,lib$(NAME).so.$(MAJOR) -o lib$(NAME).so
 	$(CC) $(LDFLAGS) $(OUTS) -shared -Wl,-soname,lib$(NAME).so.$(MAJOR) -o lib$(NAME).so.$(VERSION)
  
 lib$(NAME).so: lib$(NAME).so.$(VERSION)
