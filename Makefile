@@ -3,7 +3,7 @@ APP = libgpio
 LIBSOURCES=*.c
 OUTS = *.o
 NAME := gpio
-MAJOR = 1
+MAJOR = 1.0
 MINOR = 1
 VERSION = $(MAJOR).$(MINOR)
  
